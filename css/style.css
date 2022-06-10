@@ -1,0 +1,124 @@
+body{
+    background: -webkit-linear-gradient(bottom, #2dbd6e, #a6f77b);
+    background-repeat: no-repeat;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.card{
+    background: #fbfbfb;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.65);
+    width: 530px;
+    border-radius: 10px;
+    margin: 100px auto 150px auto;
+}
+
+.space{
+    padding-top: 15px;
+}
+.form{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+.form-content{
+    outline: none;
+    border: none;
+    padding-top: 14px;
+    background: #fbfbfb;
+}
+
+.radio{
+    padding-top: 14px;
+}
+
+.border-content{
+    background: -webkit-linear-gradient(right, #2dbd6e, #a6f77b);
+    height: 2px;
+    width: 100%;
+}
+
+.card-content{
+    padding: 30px 35px 0px 35px;
+}
+
+.sejajar{
+    display: inline-block;
+    padding-top: 10px;
+}
+.sejajar-cek{
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 260px;
+}
+
+.sejajar-drop{
+    padding-top: 10px;
+}
+
+.trust{
+    text-align: center;
+    font-weight: 800;
+    
+}
+
+.underTitle{
+    background: -webkit-linear-gradient(right, #2dbd6e, #a6f77b);
+    height: 2px;
+    margin: -20px 120px 0px 120px;
+
+}
+
+.tombol-posisi{
+    padding-top: 20px;
+}
+.tombol{
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: 0.25s;
+
+
+}
+.tombol:hover {
+    box-shadow: 0px 1px 13px #24c64f;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+

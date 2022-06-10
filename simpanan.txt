@@ -1,0 +1,22 @@
+<div>
+    <h3>Tayangan</h3>
+    <p class="tulis"><?= $_POST['tayangan'] ?></p>
+    <div class="underTitle-son"></div>
+</div>
+<div>
+    <h3>Genre</h3>
+    <?php foreach ($_POST['list'] as $key => $value) :?>
+        <p class="tulis ngatur" ><?= $value ?></p>
+    <?php endforeach; ?>
+    <div class="underTitle-son"></div>
+</div>
+<div>
+    <h3>Tahun Rilis</h3>
+    <p class="tulis"><?= $_POST['Tahun_rilis'] ?></p>
+    <div class="underTitle-son"></div>
+</div>
+<div>
+    <h3>Sinopsis</h3>
+    <p class="tulis"><?= $_POST['sinopsis']  ?></p>
+    <div class="underTitle-son"></div>
+</div>

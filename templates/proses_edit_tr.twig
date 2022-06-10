@@ -1,0 +1,272 @@
+{% extends "bootstrap.twig" %}
+
+
+{% block konten %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hasil Inputan</title>
+	<style>
+		body{
+			background: -webkit-linear-gradient(bottom, #f7f3f2, #e8e6e6);
+			background-repeat: no-repeat;
+			font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    
+		}
+
+		.card{
+			background: #fbfbfb;
+			box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.65);
+			border-radius: 10px;
+			margin: 100px auto 150px auto;
+		}
+
+		.tulis{
+			font-family:cambria;
+			font-size: 20px;
+		}
+
+		.judul{
+			font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+			padding-bottom: 10px;
+		}
+
+		.nav-jarak{
+			margin-left: 49rem;
+		}
+
+		.space{
+			padding-top: 15px;
+		}
+		.form{
+			display: flex;
+			align-items: left;
+			flex-direction: column;
+		}
+		.form-content{
+			outline: none;
+			border: none;
+			padding-top: 14px;
+			background: #fbfbfb;
+		}
+
+		.radio{
+			padding-top: 14px;
+		}
+
+		.border-content{
+			background: -webkit-linear-gradient(right, #000000, #575656);
+			height: 2px;
+			width: 100%;
+			background: -webkit-linear-gradient(right, #000000, #bababa);
+		}
+
+		.card-content{
+			padding: 30px 35px 0px 35px;
+		}
+
+		.sejajar{
+			display: inline-block;
+			padding-top: 10px;
+		}
+		.sejajar-cek{
+			display: inline-block;
+			padding-top: 10px;
+			padding-right: 260px;
+		}
+
+		.sejajar-drop{
+			padding-top: 10px;
+		}
+
+		.trust{
+			text-align: center;
+			font-weight: 800;
+			
+		}
+
+		.underTitle{
+			background: -webkit-linear-gradient(right, #000000, #bababa);
+			height: 2px;
+			margin: -20px 120px 0px 120px;
+
+		}
+
+		.tombol-posisi{
+			padding-top: 20px;
+		}
+		.tombol{
+			padding: 10px 30px 10px 30px;
+			border: none;
+			border-radius: 20px;
+			background: -webkit-linear-gradient(right, #000000, #000000);
+			color: white;
+			font-family: sans-serif;
+			font-size: 16px;
+			transition: 0.25s;
+			text-decoration: none;
+
+
+		}
+		.tombol:hover {
+			box-shadow: 0px 1px 13px #000000;
+			color: white;
+		}
+
+		.sidenav {
+			height: 100%;
+			width: 200px;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+
+		.sidenav a {
+			padding: 6px 6px 6px 32px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #818181;
+			display: block;
+		}
+
+		.sidenav a:hover {
+			color: #f1f1f1;
+		}
+
+		.main {
+			margin-left: 200px; /* Same as the width of the sidenav */
+		}
+
+		@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
+		}
+
+		.tombol-khusus{
+			padding: 10px 30px 10px 30px;
+			border: none;
+			border-radius: 20px;
+			background: -webkit-linear-gradient(right, #000000, #4e005e);
+			color: #d200ff;
+			font-family: sans-serif;
+			font-size: 16px;
+			transition: 0.25s;
+			text-decoration: none;
+
+
+		}
+		.tombol-khusus:hover {
+			box-shadow: 0px 1px 13px #d200ff;
+			color: #d200ff;
+			font-weight: bold;
+		}
+
+		.bottom-content{
+			margin-bottom: 300px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-dark">
+		<div class="container-fluid">
+			<div class="nav-jarak">
+				<a class="navbar-brand text-white nav-tulis" href="#">TRUST FILM</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</nav>
+	{# navbar-end #}
+
+	{# sidenav-start #}
+	<div class="sidenav nav-tulis">
+		<a><h3 class="d-flex align-items-center text-center text-white">TRUST FILM</h3></a>
+		<ul class="navbar-nav bottom-content">
+		{# Nav pertama #}
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Film
+			</a>
+			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+				<li><a href="../test.php">Tabel Film</a></li>
+				<li><a href="../halo.php">Insert Film</a></li>
+			</ul>
+			</li>
+			{# Nav kedua #}
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Jadwal
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a href="../jadwal/input_jadwal.php">Insert Jadwal</a></li>
+            <li><a href="../jadwal/tampil_jadwal.php" class="bottom-content">Tabel Jadwal</a></li>
+        </ul>
+        </li>
+		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			Operator
+		</a>
+		<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+			<li><a href="../operator/input_op.php">Insert Operator</a></li>
+			<li><a href="../operator/tampil_op.php">Tabel Operator</a></li>
+		</ul>
+		</li>
+		{# Nav ketiga #}
+		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			Teater
+		</a>
+		<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+			<li><a href="input_tr.php">Insert Teater</a></li>
+			<li><a href="tampil_tr.php">Tabel Teater</a></li>
+		</ul>
+		</li>
+		{# Nav Ke-Empat #}
+		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			Transaksi
+		</a>
+		<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+			<li><a href="../transaksi/input_transaksi.php">Insert Transaksi</a></li>
+			<li><a href="../transaksi/tampil_transaksi.php">Tabel Transaksi</a></li>
+		</ul>
+		</li>
+		</ul>
+		<div class="position-relative">
+			<div>
+				<li>
+					<a href="../logout.php" class="tombol-khusus">Logout</a>
+				</li>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="card h-auto w-75 p-4">	
+			<div class="card-content">
+				<div class="trust">
+					<h1 class="judul">Data Telah Di Edit</h1>
+					<div class="underTitle"></div>
+					<div class="mt-4 tulis">
+						<p>Data Telah Di Edit Silahkan Kembali Ke Halaman Sebelumnya</p>
+					</div>
+					<div>
+						<img src="https://thumbs.gfycat.com/GaseousNeedyAfricancivet-max-1mb.gif" alt="this slowpoke moves"  width="500" alt="404 image"/>
+					</div>
+					<div>
+						<a href="../test.php" class="tombol">Kembali</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+{% endblock %}
+

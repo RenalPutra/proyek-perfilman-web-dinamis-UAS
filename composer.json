@@ -1,0 +1,17 @@
+{
+    "name": "validasi/vendor",
+    "autoload": {
+        "psr-4": {
+            "Validasi\\Vendor\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "rakit/validation": "dev-master",
+        "illuminate/events": "10.x-dev",
+        "illuminate/database": "10.x-dev",
+        "twig/twig": "3.x-dev",
+        "twig/cssinliner-extra": "3.x-dev",
+        "twig/extra-bundle": "3.x-dev"
+    }
+}
