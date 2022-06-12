@@ -9,6 +9,7 @@ $data = jadwal::find($id);
 
 $all = film_ku::all();
 $op = operator::all();
+$tr = teater::all();
 
 if (!isset($_SESSION['login'])) {
 	$queryString =  $_SERVER['QUERY_STRING'];
@@ -16,6 +17,6 @@ if (!isset($_SESSION['login'])) {
 	exit();
 }
 
-echo $twig->render('edit_jadwal.twig', ['data' => $data, 'all' => $all, 'op' => $op]);
+echo $twig->render('edit_jadwal.twig', ['data' => $data, 'all' => $all, 'op' => $op, 'tr' => $tr]);
 
 ?>

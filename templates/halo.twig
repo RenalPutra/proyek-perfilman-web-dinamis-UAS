@@ -318,19 +318,27 @@
 								</div>
 							</div>
 							</div>
-				</form>
+						</form>
+						</div>
+					</div>
+					{# <?php if (isset($_POST['submit'])) :?>
+						<?php header("Location : test.php") ?>
+							<script>document.location.href='test.php';</script>
+						<?php exit; ?>
+
+					<?php endif; ?> #}
 				</div>
 			</div>
-			{# <?php if (isset($_POST['submit'])) :?>
-				<?php header("Location : test.php") ?>
-					<script>document.location.href='test.php';</script>
-				<?php exit; ?>
-
-			<?php endif; ?> #}
-		</div>
-	</div>
-	{# sidenav-end #}
-
+			{# sidenav-end #}
+			<div style="margin-left: 180px;">
+				<footer class="bg-dark text-center text-white">
+				  <!-- Copyright -->
+				  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+				  © 2022 Copyright: Raenald Syaputra &#9734;
+				  </div>
+				  <!-- Copyright -->
+				</footer>
+			  </div>
 	
 </body>
 </html>

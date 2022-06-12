@@ -7,7 +7,6 @@ require_once(__DIR__.'/model_twig.php');
 $conn = mysqli_connect("localhost", "root", "", "db_dinamis");
 
 
-
 $username = $_POST['username'];
 $password = $_POST['password'];
 $sql_login = mysqli_query($conn, "SELECT * FROM info_log WHERE username = '$username' AND password = '$password'");

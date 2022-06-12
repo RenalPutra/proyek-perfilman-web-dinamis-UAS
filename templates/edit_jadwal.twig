@@ -265,6 +265,15 @@
 							</select>
 						</div>
 
+						<label class="space">ID TEATER</label>
+						<div class="sejajar-drop">
+							<select name="id_teater">
+							{% for isi in tr %}
+								<option value="{{ isi.id_teater }}">{{ isi.id_teater }}</option>
+							{% endfor %}
+							</select>
+						</div>
+
 						<label class="space">Tanggal Tayang</label>
 						<input type="date" name="tanggal_tayang" placeholder="dd-mm-yyyy" value="{{data.tanggal_tayang}}" min="1997-01-01" max="2030-12-31">
 						<div class="border-content"></div>
@@ -297,7 +306,15 @@
 		</div>
 	</div>
 	{# sidenav-end #}
-
+	<div style="margin-left: 180px;">
+				<footer class="bg-dark text-center text-white">
+				  <!-- Copyright -->
+				  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+				  © 2022 Copyright: Raenald Syaputra &#9734;
+				  </div>
+				  <!-- Copyright -->
+				</footer>
+			  </div>
 	
 </body>
 </html>

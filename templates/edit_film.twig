@@ -244,7 +244,7 @@
 						<h1>Trust Film</h1>
 						<div class="underTitle mt-2"></div>
 					</div>
-					<form action="edit_film_proses.php?id_jadwal={{data.id}}" method="post" class="form">
+					<form action="edit_film_proses.php?id={{data.id}}" method="post" class="form">
 						<label class="space">Nama Film</label>
 						<input type="text" name="namaFilm" class="form-content" value="{{data.namafilm}}">
 						<div class="border-content"></div>
@@ -317,6 +317,16 @@
 			<?php endif; ?> #}
 		</div>
 	</div>
+	<div style="margin-left: 180px;">
+				<footer class="bg-dark text-center text-white">
+				  <!-- Copyright -->
+				  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+				  © 2022 Copyright: Raenald Syaputra &#9734;
+				  </div>
+				  <!-- Copyright -->
+				</footer>
+			  </div>
+	
 </body>
 </html>
 
